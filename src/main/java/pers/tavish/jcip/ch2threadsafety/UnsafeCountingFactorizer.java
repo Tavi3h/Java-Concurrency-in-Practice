@@ -9,6 +9,7 @@ import javax.servlet.ServletResponse;
 import java.math.BigInteger;
 
 // 程序清单2-2
+// Don't do this.
 @Getter
 @NotThreadSafe
 public class UnsafeCountingFactorizer extends GenericServlet {

@@ -3,6 +3,7 @@ package pers.tavish.jcip.ch2threadsafety;
 import net.jcip.annotations.NotThreadSafe;
 
 // 程序清单2-3
+// Don't do this.
 @NotThreadSafe
 public class LazyInitRace {
 

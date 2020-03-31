@@ -9,6 +9,7 @@ import javax.servlet.ServletResponse;
 import java.math.BigInteger;
 
 // 程序清单2-6
+// Don't do this.
 @ThreadSafe
 public class SynchronizedFactorizer extends GenericServlet {
 

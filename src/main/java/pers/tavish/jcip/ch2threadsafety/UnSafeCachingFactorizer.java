@@ -9,6 +9,7 @@ import java.math.BigInteger;
 import java.util.concurrent.atomic.AtomicReference;
 
 // 程序清单2-5
+// Don't do this.
 @NotThreadSafe
 public class UnSafeCachingFactorizer extends GenericServlet {
 
