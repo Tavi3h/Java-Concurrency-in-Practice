@@ -7,7 +7,7 @@ import java.sql.SQLException;
 // 程序清单3-10
 public class ConnectionDispenser {
 
-    private static String DB_URL = "jdbc:mysql://localhost:3306/test?user=root&password=mysql";
+    private static String DB_URL = "jdbc:mysql://localhost:3306/test?user=root&password=mysql&useSSL=false";
 
     private static ThreadLocal<Connection> connectionHolder = ThreadLocal.withInitial(() -> {
         try {

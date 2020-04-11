@@ -10,6 +10,5 @@
         <module name="Java-Concurrency-in-Practice" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="8" />
   </component>
 </project>
