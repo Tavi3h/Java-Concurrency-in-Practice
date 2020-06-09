@@ -9,7 +9,7 @@ import java.util.concurrent.TimeUnit;
 public class TrackingExecutor extends AbstractExecutorService {
 
     private final ExecutorService exec;
-    private final Set<Runnable> tasksCancelledAtShutdown = Collections.synchronizedSet(new HashSet<Runnable>());
+    private final Set<Runnable> tasksCancelledAtShutdown = Collections.synchronizedSet(new HashSet<>());
 
     public TrackingExecutor(ExecutorService exec) {
         this.exec = exec;
