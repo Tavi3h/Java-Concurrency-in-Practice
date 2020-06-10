@@ -32,7 +32,7 @@ public class Memoizer3<A, V> implements Computable<A, V> {
 
 class LaunderThrowable {
 
-    public static RuntimeException launderThrowable(Throwable t) {
+    static RuntimeException launderThrowable(Throwable t) {
         if (t instanceof RuntimeException)
             return (RuntimeException) t;
         else if (t instanceof Error)
