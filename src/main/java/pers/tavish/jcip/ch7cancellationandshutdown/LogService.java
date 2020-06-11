@@ -26,6 +26,8 @@ public class LogService {
 
     public void start() {
         loggerThread.start();
+        // 程序清单7-26
+        Runtime.getRuntime().addShutdownHook(new Thread(LogService.this::stop));
     }
 
     public void stop() {

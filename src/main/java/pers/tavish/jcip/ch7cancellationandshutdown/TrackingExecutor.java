@@ -40,7 +40,7 @@ public class TrackingExecutor extends AbstractExecutorService {
         if (!exec.isTerminated()) {
             throw new IllegalStateException(/*...*/);
         }
-        return new ArrayList<Runnable>(tasksCancelledAtShutdown);
+        return new ArrayList<>(tasksCancelledAtShutdown);
     }
 
     public void execute(final Runnable runnable) {
