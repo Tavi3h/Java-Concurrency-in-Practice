@@ -23,7 +23,7 @@ public class StripedMap {
             locks[i] = new Object();
     }
 
-    private final int hash(Object key) {
+    private int hash(Object key) {
         return Math.abs(key.hashCode() % buckets.length);
     }
 
